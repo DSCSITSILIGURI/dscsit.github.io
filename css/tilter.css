@@ -1,0 +1,174 @@
+@media only screen and (max-width: 600px) {
+    .tilter {
+        position: relative;
+        display: block;
+        flex: none;
+        width: 40vw !important;
+        height: 60vw !important;
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+        color: #fff;
+        perspective: 1000px;
+    }
+
+    .tilter-lead {
+        width: 40vw !important;
+        height: 60vw !important;
+        left: 0 !important;
+    }
+
+    .tilter-team {
+        width: 22vw;
+        height: 27vw;
+        left: 0 !important;
+    }
+
+    .tilter__title {
+        position: absolute;
+        font-size: 1.3em !important;
+        font-weight: normal;
+        line-height: 1;;
+        bottom: 0;
+        margin-bottom: 30% !important;
+        left: 10%;
+    }
+
+    .tilter__description {
+        font-size: 0.65em !important;
+        margin: 1em 0 0 0;
+        letter-spacing: 0.05em !important;
+    }
+
+    .community-lead {
+        left: 28% !important;
+    }
+}
+
+/* Tilter CSS */
+
+.tilter-team {
+    width: 15vw;
+    height: 20vw;
+    left: 17%;
+}
+
+.tilter-lead {
+    width: 15vw;
+    height: 20vw;
+    left: 17%;
+}
+
+.tilter {
+    position: relative;
+    display: block;
+    flex: none;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color: #fff;
+    perspective: 1000px;
+}
+
+.tilter * {
+    pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+    color: #fff;
+    outline: none;
+}
+
+.tilter__figure,
+.tilter__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.tilter__figure > * {
+    transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.tilter__figure {
+    position: relative;
+}
+
+.tilter__figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.tilter__deco--overlay {
+    background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+
+.tilter__deco--shine div {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.tilter__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+}
+
+.tilter__title {
+    position: absolute;
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1;;
+    bottom: 0;
+    margin-bottom: 20%;
+    left: 10%;
+}
+
+.tilter__description {
+    font-size: 0.55em;
+    margin: 1em 0 0 0;
+    letter-spacing: 0.05em;
+}
+
+.tilter__deco_lines {
+    border: 2px solid white;
+    height: 90%;
+    width: 89%;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+}
+
+.profile-social-links {
+    margin-top: 20px;
+    position: relative;
+}
+.community-lead {
+    left: 25%;
+}

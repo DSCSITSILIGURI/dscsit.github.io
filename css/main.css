@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@-webkit-keyframes bouncing-loader {
+    to {
+        -webkit-transform: translate3d(0, -1rem, 0);
+        transform: translate3d(0, -1rem, 0)
+    }
+}
+
+@keyframes bouncing-loader {
+    to {
+        -webkit-transform: translate3d(0, -1rem, 0);
+        transform: translate3d(0, -1rem, 0)
+    }
+}
+
+
+@-webkit-keyframes scroll-down {
+    to {
+        -webkit-transform: translate3d(0, -0.5rem, 0);
+        transform: translate3d(0, -0.5rem, 0)
+    }
+}
+
+@keyframes scroll-down {
+    to {
+        -webkit-transform: translate3d(0, -0.5rem, 0);
+        transform: translate3d(0, -0.5rem, 0)
+    }
+}
+
+:target {padding-top: 70px;}
+
+.bouncing-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    top: 0
+}
+
+.bouncing-loader > div {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .75rem;
+    background: #4285f4;
+    border-radius: 50%;
+    -webkit-animation: bouncing-loader 500ms infinite alternate;
+    animation: bouncing-loader 500ms infinite alternate;
+}
+
+.bouncing-loader > div:nth-child(2) {
+    background: #ea4335;
+    -webkit-animation-delay: 125ms;
+    animation-delay: 125ms;
+}
+
+.bouncing-loader > div:nth-child(3) {
+    background: #fbbc05;
+    -webkit-animation-delay: 250ms;
+    animation-delay: 250ms;
+}
+
+.bouncing-loader > div:nth-child(4) {
+    background: #34a853;
+    -webkit-animation-delay: 375ms;
+    animation-delay: 375ms;
+}
+
+.nav-logo {
+    padding-left: 20px;
+    height: 85px;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+}
+
+.nav-text {
+    vertical-align: top;
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 2.00rem;
+    line-height: 2.7;
+    transition: font-size 0.5s;
+}
+
+.main-nav {
+    background-color: rgba(0, 0, 0, 0);
+    color: black !important;
+    transition: background-color 0.5s ease;
+}
+
+.no-shadows {
+    box-shadow: none !important;
+}
+
+.scroll-up-button {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.scroll-up-button-icon {
+    line-height: 40px !important;
+}
+
+.box {
+    z-index: 0;
+    top: 0;
+    transform: rotate(360deg);
+    left: 0;
+    display: block;
+}
+
+.wave {
+    position: absolute;
+    opacity: 1;
+    width: 100vw;
+    height: 80vw;
+    border-radius: 43%;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+
+.wave.-one {
+    animation: rotate 30000ms infinite linear;
+    opacity: 1;
+    background: #0af;
+    bottom: 0;
+    left: 10vw;
+    z-index: 1 !important;
+}
+
+.wave.-two {
+    animation: rotate 30000ms infinite linear;
+    opacity: 1;
+    background: green;
+    left: -80vw;
+    z-index: 1 !important;
+}
+
+.wave.-three {
+    animation: rotate 30000ms infinite linear;
+    opacity: 1;
+    background-color: red;
+    left: 80vw;
+    z-index: 1 !important;
+}
+
+.wave.-four {
+    animation: rotate 30000ms infinite linear;
+    opacity: 1;
+    background-color: yellow;
+    bottom: 0;
+    right: 40vw;
+}
+
+.about-content {
+    margin-top: 100px;
+    position: relative;
+}
+
+.page-header {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-header {
+    max-height: 999px;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-text {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #343434;
+}
+
+.header-sub-text {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #343434;
+}
+
+.about-section {
+    margin: 5vw !important;
+}
+
+.about-section-header {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    padding: 15px;
+    font-size: 1.5rem;
+    box-shadow: none;
+    background-color: green !important;
+    padding-right: 40px !important;
+}
+
+.about-section-content {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+    .header-text {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #343434;
+    }
+
+    .header-sub-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #343434;
+    }
+}
+
+/* FOOTER */
+
+.page-footer {
+    border-top: 0.08rem solid #dbdbdb;
+}
+
+.footer-1 {
+    height: 65px;
+}
+
+.footer-container {
+    width: 90% !important;
+}
+
+.facebook-icon {
+    color: #3B5998;
+}
+
+.linkedin-icon {
+    color: #4875B4;
+}
+
+.twitter-icon {
+    color: #33CCFF;
+}
+
+.instagram-icon {
+    color: #4E433C;
+}
+
+.github-icon {
+    color: black;
+}
+
+.globe-icon {
+    color: black;
+}
+
+.footer-logo-text {
+    vertical-align: top;
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 2.00rem;
+    line-height: 2.1;
+    margin-left: 5px;
+    transition: font-size 0.5s;
+}
+
+.section-header {
+    position: absolute;
+    padding: 15px;
+    font-size: 1.5rem;
+    box-shadow: none;
+    background-color: green !important;
+}
+
+.spacer.s2 {
+    min-height: 200px;
+}
+
+.spacer.s0 {
+    min-height: 1px;
+}
+
+.spacer.middle {
+    margin-top: 40vh;
+    position: absolute;
+}
+
+.test-box {
+    min-width: 50px;
+    height: 50px;
+    margin: 25px auto 25px auto;
+}
+
+.domain-title {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 20px;
+}
+
+.scroll-down .scroller {
+    fill: currentColor;
+    color: #636363;
+    animation: scroll-down 1000ms infinite alternate;
+    /animation-name: updown;/
+    /animation-duration: 2s;/
+    /animation-timing-function: ease;/
+    /animation-delay: 0s;/
+    /animation-iteration-count: infinite;/
+    /animation-direction: normal;/
+    /animation-fill-mode: none;/
+    /animation-play-state: running;/
+}
+
+.what-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.snow {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .snow .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #snow-top-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 22.5s infinite linear;
+  }
+  #snow-bottom-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 45s infinite linear;
+  }
+  @keyframes fall {
+    100% {
+      transform: translateY(0);
+    }
+  }
