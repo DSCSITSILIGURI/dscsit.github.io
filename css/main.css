@@ -182,7 +182,7 @@ html {
 .main-header {
     max-height: 999px;
     padding: 0;
-    color: #fff;
+    color: #111;
     position: relative;
     overflow: hidden;
 }
@@ -190,34 +190,66 @@ html {
 .header-text {
     font-size: 4rem;
     font-weight: 600;
-    color: #343434;
+    color: #111;
+    animation:animate 2s linear infinite;
 }
-.header-text span {
-    display: table-cell;
-    animation: animate 2s linear infinitel;
-}
+
 .header-sub-text {
     font-size: 2rem;
     font-weight: 400;
     color: #343434;
+
 }
-.header-sub-text span {
-    display: table-cell;
-    animation: animate 2s linear infinitel;
+.nav-text span
+{
+	display: table-cell;
+	animation:animate 2s linear infinite;
 }
+.nav-text span:nth-child(1)
+{
+	animation-delay:0s;
+}
+.nav-text span:nth-child(2)
+{
+	animation-delay:0.25s;
+}
+.nav-text span:nth-child(3)
+{
+	animation-delay:0.5s;
+}
+.nav-text span:nth-child(4)
+{
+	animation-delay:0.75s;
+}
+.nav-text span:nth-child(5)
+{
+	animation-delay:1s;
+}
+.nav-text span:nth-child(6)
+{
+	animation-delay:1.25s;
+}
+
 @keyframes animate
 {
-    0%,100%
-    {
-        color: #fff;
-        filter: blur(2px);
-    }
-    
-    5%,95%
-    {
-        color: #111;
-        filter: blur(0px);
-    }     
+	0%,100%
+	{
+		
+		color: 0 0 10px #FF0800,
+		       0 0 20px #32CD32,
+		       0 0 40px #2F56E9,
+		       0 0 80px #FFD319,
+	               0 0 120px #FF0800,
+		       0 0 200px #00b3ff;
+		filter: blur(2px);
+		
+	}
+	5%,95%
+	{
+		
+		filter: blur(0px);
+		text-shadow: 0 0 10px none;
+	}
 }
 
 .about-section {
