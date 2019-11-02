@@ -192,11 +192,32 @@ html {
     font-weight: 600;
     color: #343434;
 }
-
+.header-text span {
+    display: table-cell;
+    animation: animate 2s linear infinitel;
+}
 .header-sub-text {
     font-size: 2rem;
     font-weight: 400;
     color: #343434;
+}
+.header-sub-text span {
+    display: table-cell;
+    animation: animate 2s linear infinitel;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        color: #fff;
+        filter: blur(2px);
+    }
+    
+    5%,95%
+    {
+        color: #111;
+        filter: blur(0px);
+    }     
 }
 
 .about-section {
@@ -226,6 +247,7 @@ html {
         font-size: 3rem;
         font-weight: 600;
         color: #343434;
+        backgound-color: 
     }
 
     .header-sub-text {
