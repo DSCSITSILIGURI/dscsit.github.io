@@ -3,6 +3,9 @@ html {
     overflow-x: hidden;
 }
 
+
+
+
 @-webkit-keyframes bouncing-loader {
     to {
         -webkit-transform: translate3d(0, -1rem, 0);
@@ -73,6 +76,11 @@ html {
     -webkit-animation-delay: 375ms;
     animation-delay: 375ms;
 }
+
+.myid{
+   
+}
+
 
 .nav-logo {
     padding-left: 20px;
@@ -293,6 +301,7 @@ html {
 
 .spacer.s2 {
     min-height: 200px;
+    margin-top: 25%;
 }
 
 .spacer.s0 {
@@ -345,6 +354,35 @@ html {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.myform{
+    position: absolute;
+    background-color: white;
+    margin: center;
+    width: auto;
+    height: auto;
+    /* align-items: center; */
+    margin-left: 25%;
+    position: absolute;
+    /*margin-right: 20%;
+    /* right: 20%; */
+    /* margin-left: -50px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 50%;
+    border: 2px outset grey;
+    padding: 10px;
+}
+
+.labels{
+    color: black;
+    font-size: 20px
+}
+
+.form-group{
+    color: black;
+    font-size: 20px;
+}
+
 
 .snow {
     position: absolute;
