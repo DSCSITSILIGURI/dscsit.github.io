@@ -31,7 +31,16 @@ html {
         transform: translate3d(0, -0.5rem, 0)
     }
 }
-
+/* .row {
+  background-color: #fff;
+  margin: 0px;
+}
+.navbar-fixed {
+  background-color: #111;
+}
+.body{
+  background-color: #111;
+} */
 :target {padding-top: 70px;}
 
 .bouncing-loader {
@@ -234,7 +243,7 @@ html {
 {
 	0%,100%
 	{
-		
+
 		color: 0 0 10px #FF0800,
 		       0 0 20px #32CD32,
 		       0 0 40px #2F56E9,
@@ -242,11 +251,11 @@ html {
 	               0 0 120px #FF0800,
 		       0 0 200px #00b3ff;
 		filter: blur(2px);
-		
+
 	}
 	5%,95%
 	{
-		
+
 		filter: blur(0px);
 		text-shadow: 0 0 10px none;
 	}
@@ -279,7 +288,6 @@ html {
         font-size: 3rem;
         font-weight: 600;
         color: #343434;
-        backgound-color: 
     }
 
     .header-sub-text {
@@ -293,6 +301,7 @@ html {
 
 .page-footer {
     border-top: 0.08rem solid #dbdbdb;
+
 }
 
 .footer-1 {
@@ -300,8 +309,18 @@ html {
 }
 
 .footer-container {
-    width: 90% !important;
+    width: 100% !important;
 }
+.page-footer white black-text
+{
+  padding: 0px;
+  background-color: black;
+}
+.container footer-container{
+  margin:0px;
+  background-color: black;
+}
+
 
 .facebook-icon {
     color: #3B5998;
@@ -329,7 +348,7 @@ html {
 
 .footer-logo-text {
     vertical-align: top;
-    color: #555 !important;
+    color: #343434 !important;
     font-weight: 600;
     font-size: 2.00rem;
     line-height: 2.1;
