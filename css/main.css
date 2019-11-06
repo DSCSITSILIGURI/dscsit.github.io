@@ -10,6 +10,31 @@ html {
     }
 }
 
+.form-group{
+    color: black;
+    font-size: 20px;
+}
+
+
+.myform{
+    position: absolute;
+    background-color: white;
+    margin: center;
+    width: auto;
+    height: auto;
+    /* align-items: center; */
+    margin-left: 25%;
+    position: absolute;
+    /*margin-right: 20%;
+    /* right: 20%; */
+    /* margin-left: -50px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 50%;
+    border: 2px outset grey;
+    padding: 10px;
+}
+
 @keyframes bouncing-loader {
     to {
         -webkit-transform: translate3d(0, -1rem, 0);
@@ -301,7 +326,8 @@ html {
 
 .page-footer {
     border-top: 0.08rem solid #dbdbdb;
-
+    margin-top: 200px;
+    margin-bottom: 500px;
 }
 
 .footer-1 {
@@ -310,11 +336,13 @@ html {
 
 .footer-container {
     width: 100% !important;
+
 }
 .page-footer white black-text
 {
   padding: 0px;
   background-color: black;
+      margin-top: 200px;
 }
 .container footer-container{
   margin:0px;
