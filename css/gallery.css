@@ -1,0 +1,44 @@
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    background-color: transparent;
+}
+
+.jumbotron {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: rgb(138, 70, 202);
+    background: #ecf0f1;
+}
+
+#heading {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    padding: 10px;
+    color: rgb(53, 111, 199);
+}
+
+
+/* .yellow{
+    background: yellow;
+    border: 1px solid purple;
+} */
+
+.img {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-inverse {
+    background: #2c3e50;
+}
